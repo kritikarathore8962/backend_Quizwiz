@@ -35,7 +35,10 @@ app.route('/api/v1/students').get((req,res)=>{
     data:arr
   })
 })
-
+app.get("/", (req, res, next) => {
+  res.send("<h1>Hello</h1>");
+  next();
+});
 
 app.route('/api/v1/teachers/quiz/upload').post(upload.single('pdf_file'), async (req, res) => {
 
