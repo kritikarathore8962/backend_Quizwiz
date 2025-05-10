@@ -5,8 +5,8 @@ const multer=require('multer');
 const PDFParser=require('pdf-parse')
 const storage=multer.memoryStorage();
 const upload=multer({storage:storage})
-const userRouter=require("./Routes/userRoutes")
-const quizRouter=require("./Routes/quizRoutes")
+const userRouter=require("../Routes/userRoutes")
+const quizRouter=require("../Routes/quizRoutes")
 const dotenv=require("dotenv");
 dotenv.config();
 mongoose
